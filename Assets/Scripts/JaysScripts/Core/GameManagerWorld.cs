@@ -61,9 +61,10 @@ public class GameManagerWorld : MonoBehaviour {
 		ResumeBtn.gameObject.SetActive(false);
 		Time.timeScale = 1;
 		Paused = false;
-		UISel.Resume ();
+		SceneManager.LoadScene (0);
+		//UISel.Resume ();
 		//Load start scene
-		//SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
+
 	}
 
 	public void ClickResume() {

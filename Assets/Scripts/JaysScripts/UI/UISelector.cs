@@ -43,7 +43,6 @@ public class UISelector : MonoBehaviour {
 	private void buttonClick() {
 		for (int i = 0; i < buttons.Count; i++) {
 			if (buttonCount == i) {
-				print ("clicker");
 				buttons [i].onClick.Invoke ();
 			}
 		}
