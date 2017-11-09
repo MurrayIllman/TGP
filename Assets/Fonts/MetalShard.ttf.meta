@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: c829d1b920a08274ea7bbbb1dd57d3d9
+timeCreated: 1510232673
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: MetalShard
+  fontNames:
+  - MetalShard
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
