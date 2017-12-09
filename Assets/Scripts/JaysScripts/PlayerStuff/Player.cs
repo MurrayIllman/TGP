@@ -98,6 +98,10 @@ public class Player : MonoBehaviour {
 	}
 
 	public void Die(){
+		float Highscore = GameObject.Find ("GameManager").GetComponent<BestTime> ().t;
+		if (Highscore > PlayerPrefs.GetFloat("Longestrun", 0)) {
+			PlayerPrefs.SetFloat ("Longestrun", Highscore);
+		}
 		print ("Player ded");
 		Dead = true;
 		playerMovement.DisableMovement ();

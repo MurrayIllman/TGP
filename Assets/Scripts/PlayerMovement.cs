@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	private float moveSpeed;
 	private float fallSpeed;
+	private float speeduptimer;
 
 	// Use this for initialization
 	void Start () {
@@ -47,5 +48,15 @@ public class PlayerMovement : MonoBehaviour {
 			//GetComponent<Rigidbody> ().velocity = new Vector3 (moveSpeed, -fallSpeed, 0);
 			transform.position += new Vector3 (moveSpeed* Time.deltaTime , -fallSpeed * Time.deltaTime, 0);
 		}
+		if(speeduptimer < Time.time)
+		{
+			speeduptimer = Time.time + 5 + (10 * Random.value);
+			//in this case the speeduptimer is changed on a random interval between 5 and 15 seconds, use Time.time+10 to use a static 10 ingame seconds for each increase (if you are increasing gamespeed to increase movement speed, im not sure how this would be affected.)
+			IncreasePlayerSpeed();
+		}
+	}
+
+	void IncreasePlayerSpeed(){
+		runSpeed += 4;
 	}
 }
